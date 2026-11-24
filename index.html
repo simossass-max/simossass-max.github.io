@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About – Autoclip</title>
+<meta name="description" content="Autoclip: a personal tool that turns long videos into short vertical clips and posts them to the operator’s own accounts.">
+<style>
+:root{--ink:#1c2430;--muted:#566070;--paper:#fcfcfb;--rule:#d9dde3;--accent:#17586f}
+@media (prefers-color-scheme:dark){:root{--ink:#e7eaee;--muted:#a3adba;--paper:#14181e;--rule:#2d3541;--accent:#7cc3da}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.0625rem/1.7 Charter,"Iowan Old Style","Palatino Linotype",Georgia,serif}
+header,main,footer{max-width:42rem;margin:0 auto;padding:0 1.25rem}
+header{padding-top:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:baseline;justify-content:space-between}
+.brand{font:700 1.15rem/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:1.25rem;font:.95rem/1.2 system-ui,-apple-system,"Segoe UI",sans-serif}
+nav a{color:var(--muted);text-decoration:none}
+nav a[aria-current=page]{color:var(--ink);text-decoration:underline;text-underline-offset:.3em}
+nav a:hover{color:var(--ink)}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+main{padding-top:2rem;padding-bottom:3rem}
+h1{font:700 2rem/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;margin:0 0 .5rem;letter-spacing:-.01em}
+h2{font:650 1.2rem/1.3 system-ui,-apple-system,"Segoe UI",sans-serif;margin:2.25rem 0 .5rem}
+p,ul{margin:.75rem 0}
+ul{padding-left:1.25rem}
+li{margin:.35rem 0}
+.meta{color:var(--muted);font:.9rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;margin:0 0 1.5rem}
+footer{padding-top:1rem;padding-bottom:2.5rem;border-top:1px solid var(--rule);color:var(--muted);font:.9rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">Autoclip</a>
+<nav aria-label="Site">
+<a href="index.html" aria-current="page">About</a>
+<a href="terms.html">Terms of Service</a>
+<a href="privacy.html">Privacy Policy</a>
+</nav>
+</header>
+<main>
+<h1>Autoclip</h1>
+<p class="meta">A personal video clipping tool</p>
+<p>Autoclip turns long videos into short, vertical clips with burned-in captions. It picks the most active moments of a video, cuts them, and publishes the result to the operator’s own YouTube and TikTok accounts.</p>
+
+<h2>How it uses TikTok</h2>
+<p>Autoclip uses TikTok’s Content Posting API with the <code>video.publish</code> permission. The account owner signs in through TikTok’s own authorization screen and grants this permission. After that, Autoclip can post clips to that same account, and only when the owner runs a posting job. It does not read the owner’s videos, followers, messages, or any other account data.</p>
+
+<h2>Content</h2>
+<p>Autoclip only processes videos that the operator owns or has permission to use. Clips are created on the operator’s computer, and each clip is uploaded to TikTok only when the owner chooses to post it.</p>
+
+<h2>Legal</h2>
+<ul>
+<li><a href="terms.html">Terms of Service</a></li>
+<li><a href="privacy.html">Privacy Policy</a></li>
+</ul>
+
+<h2>Contact</h2>
+<p>Questions or requests about Autoclip: <a href="mailto:simossass@gmail.com">simossass@gmail.com</a>. The source of the operator’s projects is available on <a href="https://github.com/simossass-max">GitHub</a>.</p>
+</main>
+<footer>
+<p>Autoclip is an independent project and is not affiliated with or endorsed by TikTok or Google. Contact: <a href="mailto:simossass@gmail.com">simossass@gmail.com</a></p>
+</footer>
+</body>
+</html>
